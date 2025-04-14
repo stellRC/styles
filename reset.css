@@ -1,0 +1,19 @@
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-size: 25px;
+
+  font-family: "openDyslexic";
+}
+
+a {
+  color: var(--link-underline);
+}
+
+button {
+  width: 10vw;
+  height: 5vh;
+  background-color: var(--button-color);
+  color: inherit;
+  font-size: inherit;
+}
