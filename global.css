@@ -1,11 +1,42 @@
 :root {
-  color-scheme: light dark;
+  color-scheme: dark light;
 
-  --background-color: rgb(0, 48, 70);
-  --link-underline: rgb(229, 141, 102);
+  /* Colors */
   --button-color: rgb(98, 170, 196);
-  --text-color: rgb(246, 241, 238);
   --alt-dark-color: rgb(3, 59, 85);
+
+  /* Font 20px-22px */
+  --font-base: clamp(1.25rem, 1.2065rem + 0.2174vw, 1.375rem);
+  --font-100: clamp(1.5rem, 1.4239rem + 0.3804vw, 1.7188rem);
+  --font-200: clamp(1.8rem, 1.6788rem + 0.606vw, 2.1484rem);
+  --font-300: clamp(2.16rem, 1.9772rem + 0.914vw, 2.6855rem);
+  --font-400: clamp(2.592rem, 2.3259rem + 1.3303vw, 3.3569rem);
+  --font-500: clamp(3.1104rem, 2.7327rem + 1.8883vw, 4.1962rem);
+  --font-600: clamp(5.1104rem, 2.7327rem + 1.8883vw, 6.1962rem);
+
+  /* Font Weight */
+  --weight-400: 400;
+  --weight-500: 500;
+  --weight-600: 600;
+  --weight-700: 700;
+  --weight-800: 800;
+  --weight-900: 900;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: rgb(0, 48, 70);
+    --text-color: rgb(246, 241, 238);
+    --link-underline: rgb(229, 141, 102);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background-color: rgb(246, 241, 238);
+    --text-color: rgb(3, 59, 85);
+    --link-underline: rgb(208, 101, 55);
+  }
 }
 
 body {
@@ -18,9 +49,10 @@ a {
   color: var(--link-underline);
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    --background-color: rgb(246, 241, 238);
-    --text-color: rgb(3, 59, 85);
-  }
+button {
+  width: 10vw;
+  height: 5vh;
+  background-color: var(--button-color);
+  color: inherit;
+  font-size: inherit;
 }
