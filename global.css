@@ -1,0 +1,26 @@
+:root {
+  color-scheme: light dark;
+
+  --background-color: rgb(0, 48, 70);
+  --link-underline: rgb(229, 141, 102);
+  --button-color: rgb(98, 170, 196);
+  --text-color: rgb(246, 241, 238);
+  --alt-dark-color: rgb(3, 59, 85);
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-size: 25px;
+}
+
+a {
+  color: var(--link-underline);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background-color: rgb(246, 241, 238);
+    --text-color: rgb(3, 59, 85);
+  }
+}
