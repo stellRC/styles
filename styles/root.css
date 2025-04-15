@@ -5,8 +5,8 @@
   --background-color: rgba(237, 235, 215, 1);
   --button-color: rgba(65, 123, 90, 1);
   --highlight-color: rgb(255, 229, 76, 0.7);
-  /* --alt-color: rgba(219, 50, 77, 1); */
   --alt-color: rgba(219, 50, 77, 1);
+  /* --alt-color: rgba(219, 50, 77, 1); */
 
   --valid-input: rgba(7, 77, 20, 0.75);
   --invalid-input: rgba(150, 20, 20, 0.668);
