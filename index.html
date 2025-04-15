@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <!-- <link rel="stylesheet" href="font-face.css" /> -->
+    <!-- CSS -->
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="root.css" />
     <link rel="stylesheet" href="font-type.css" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="toggle.css" />
+    <link rel="stylesheet" href="global.css" />
+    <!-- JS -->
     <script src="cursor.js" defer></script>
   </head>
   <body class="variable-font">
@@ -35,6 +38,16 @@
       attack out of jealousy.
     </p>
     <button class="button-bordered cursor-hover">Hi!</button>
-    <input type="checkbox" class="toggle" name="" id="" />
+    <div class="switch-wrapper">
+      <input
+        class="switch-input"
+        type="checkbox"
+        role="switch"
+        name="dark"
+        id="dark"
+      />
+      <label class="switch-label" for="dark"></label>
+      <span class="switch-sr">Dark Mode</span>
+    </div>
   </body>
 </html>

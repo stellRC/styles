@@ -3,6 +3,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  cursor: none;
 }
 
 /* Prevent font size inflation */
@@ -61,11 +62,13 @@ h6 {
 }
 
 /* 9. Improve line wrapping */
+/* Add space between paragraphs */
 p {
   text-wrap: pretty;
   overflow-wrap: break-word;
   hyphens: auto;
   max-width: 50ch;
+  margin-bottom: var(--space-paragraph);
 }
 
 h1,
