@@ -51,11 +51,8 @@ label:hover {
 /* Buttons & Links & Toggles */
 
 .button-bordered {
-  --text-color: rgba(24, 49, 79, 1);
-  color: var(--text-color);
+  color: var(--background-color);
 
-  width: var(--space-3xl);
-  height: 5vh;
   padding: 13px 20px 13px;
   outline: 0;
   border: 1px ridge black;
@@ -66,10 +63,17 @@ label:hover {
   -webkit-user-select: none;
   touch-action: manipulation;
   box-shadow: 1px 1px 5px rgba(1, 1, 0, 0.7);
+
+  transition: color 0.3s;
 }
 
-.button-bordered:has(.switch__input:checked) {
+.button-bordered:has(.switch-input:checked) {
   color: var(--background-color);
+}
+
+.button-bordered:hover,
+.button-bordered:focus {
+  color: var(--text-color);
 }
 
 .button-bordered::after {
@@ -146,10 +150,6 @@ label:hover {
 }
 
 /* Form Front Side Validation */
-
-input {
-  outline: 3px solid hsl(203, 30%, 36%);
-}
 
 /* User has entered a valid input */
 input:not(:placeholder-shown):user-valid {

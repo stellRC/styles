@@ -15,6 +15,7 @@ header {
 /* TABLE */
 
 h1,
+h2,
 caption {
   text-align: center;
 }
@@ -69,7 +70,62 @@ tr:first-child {
   margin-top: 2rem;
 }
 
-/* FORM */
+/* Form */
+
+form,
+.form-group,
+.date-info {
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+form {
+  gap: var(--space-m);
+}
+
+::placeholder {
+  opacity: 0.7;
+}
+
+input {
+  background-color: var(--text-color);
+  color: var(--background-color);
+  text-align: center;
+  z-index: 10000;
+
+  padding-block: 0.5rem;
+}
+
+input[type="number"] {
+  max-width: 6ch;
+}
+
+input[type="text"] {
+  max-width: 14ch;
+}
+
+.button-bordered {
+  width: fit-content;
+  padding: 1rem;
+}
+
+input,
+.button-bordered,
+.button-bordered::after {
+  border-radius: 5px;
+}
+
+@media (max-width: 500px) {
+  .wrapper {
+    width: auto;
+    margin-inline: 0.4rem;
+  }
+
+  .primary-footer {
+    text-align: center;
+  }
+}
 
 /* Table collapses for mobile */
 @media (max-width: 650px) {
@@ -82,9 +138,7 @@ tr:first-child {
 /* Table collapses for mobile (Use if have more than two types of data) */
 @media (max-width: 650px) {
   /* remove columns */
-  .wrapper {
-    margin-inline: 0.4rem;
-  }
+
   th {
     display: none;
   }
@@ -117,5 +171,14 @@ tr:first-child {
     --padding: 1rem;
     content: "date";
     padding-right: var(--padding);
+  }
+
+  form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  form button {
+    margin-left: 2rem;
   }
 }
