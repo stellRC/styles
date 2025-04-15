@@ -17,3 +17,16 @@ button {
   color: inherit;
   font-size: inherit;
 }
+
+/* Type */
+
+h1 {
+  font-size: var(--);
+}
+
+/* Color */
+
+/* Padding */
+
+.sub-heading {
+}

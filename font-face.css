@@ -1,0 +1,38 @@
+/* Define font face rules so that you only  */
+@font-face {
+  font-family: "openDyslexic";
+  src: local("openDyslexic"), url("/font/.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "openDyslexic";
+  src: local("openDyslexic"),
+    url("/font/OpenDyslexic-Italic.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "openDyslexic";
+  src: local("openDyslexic"),
+    url("/font/OpenDyslexic-Bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "openDyslexic";
+  src: local("openDyslexic"),
+    url("/font/OpenDyslexic-Bold-Italic.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "openDyslexic";
+  src: local("openDyslexic"),
+    url("/font/OpenDyslexic-characters.pdf") format("pdf");
+  font-style: normal;
+  font-weight: 400;
+}
