@@ -1,0 +1,148 @@
+html {
+  /* Remove Default Cursor to apply custom cursor */
+  cursor: none;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+a {
+  color: var(--highlight-color);
+}
+
+p {
+  margin-bottom: var(--space-paragraph);
+}
+
+a:hover,
+button:hover {
+  cursor: none;
+}
+
+/* Cursor */
+
+.cursor-big {
+  width: 20px;
+  height: 20px;
+  /* background-color: var(--text-color); */
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  opacity: 0.9;
+  mix-blend-mode: exclusion;
+}
+
+/* Buttons & Links & Toggles */
+
+button {
+  color: var(--background-color);
+
+  width: 7vw;
+  height: 5vh;
+}
+
+.button-bordered {
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 1px ridge black;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  box-shadow: 1px 1px 5px rgba(1, 1, 0, 0.7);
+}
+
+.button-bordered::after {
+  content: "";
+  background-color: var(--button-color);
+
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: all 0.2s ease-in-out;
+}
+
+.button-bordered:hover:after {
+  top: 0;
+  left: 0;
+
+  background-color: var(--highlight-color);
+  border: 3px ridge black;
+}
+
+.button-bordered:focus-visible {
+  background-color: var(--highlight-color);
+}
+
+.button-bordered:focus:not(:focus-visible) {
+  outline: none;
+  box-shadow: 1px 1px 5px rgba(1, 1, 0, 0.7);
+  background-color: var(--highlight-color);
+}
+
+.toggle {
+  border: 0.5px solid rgba(117, 117, 117, 0.31);
+  box-shadow: inset 0px 0px 4px 0px rgba(0, 0, 0, 0.2),
+    0 -3px 4px rgba(0, 0, 0, 0.15);
+  background-color: var(--button-color);
+  width: 4em;
+  height: 2em;
+}
+
+.toggle:checked {
+  background-color: var(--highlight-color);
+}
+
+.toggle-wrapper {
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.link-decoration {
+  -webkit-box-shadow: 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0.125em 0 rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  background-color: inherit;
+  border-radius: 5px;
+
+  color: var(--button-color);
+}
+
+.link-decoration:focus:before,
+.link-decoration:hover:before {
+  opacity: 0.3;
+}
+
+.link-decoration::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 0.3em;
+  background-color: var(--highlight-color);
+  opacity: 0.5;
+  transition: opacity 300ms, transform 300ms, background-color 300ms;
+  width: 100%;
+  left: 0;
+}
+
+.link-decoration:hover {
+  background-color: var(--highlight-color);
+}
+
+.link-decoration:focus {
+  background-color: var(--highlight-color);
+}
+
+.link-decoration:hover::after,
+.link-decoration:focus::after {
+  opacity: 1;
+  transform: translate3d(0em, 0.1em, 0.1em);
+}

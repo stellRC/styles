@@ -1,0 +1,190 @@
+:root {
+  /* Font 20px-22px */
+  --font-base: clamp(1.25rem, 1.2065rem + 0.2174vw, 1.375rem);
+  --font-100: clamp(1.5rem, 1.4239rem + 0.3804vw, 1.7188rem);
+  --font-200: clamp(1.8rem, 1.6788rem + 0.606vw, 2.1484rem);
+  --font-300: clamp(2.16rem, 1.9772rem + 0.914vw, 2.6855rem);
+  --font-400: clamp(2.592rem, 2.3259rem + 1.3303vw, 3.3569rem);
+  --font-500: clamp(3.1104rem, 2.7327rem + 1.8883vw, 4.1962rem);
+  --font-600: clamp(5.1104rem, 2.7327rem + 1.8883vw, 6.1962rem);
+
+  /* Font Weight */
+  --weight-400: 400;
+  --weight-500: 500;
+  --weight-600: 600;
+  --weight-700: 700;
+  --weight-800: 800;
+  --weight-900: 900;
+
+  /* Line Height: 1.5x font size */
+  --line-height-base: 1.5;
+  --line-height-heading: 1.2;
+  --line-height-caption: 1.3;
+
+  /* Letter Spacing: 0.12x font size */
+  --letter-space: 0.12;
+
+  /* Word Spacing: 0.16x font size*/
+  --word-space: 0.16;
+}
+
+/* DYSLEXIA Static  */
+@font-face {
+  font-family: "openDyslexic";
+  src: local("openDyslexic"), url("/font/.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "openDyslexic";
+  src: local("openDyslexic"),
+    url("/font/OpenDyslexic-Italic.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "openDyslexic";
+  src: local("openDyslexic"),
+    url("/font/OpenDyslexic-Bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "openDyslexic";
+  src: local("openDyslexic"),
+    url("/font/OpenDyslexic-Bold-Italic.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "openDyslexic";
+  src: local("openDyslexic"),
+    url("/font/OpenDyslexic-characters.pdf") format("pdf");
+  font-style: normal;
+  font-weight: 400;
+}
+
+/* MERINDA: VARIABLE */
+@font-face {
+  font-family: "merinda-variable";
+  src: local("Merinda-VariableFont_wght"),
+    url("/font/Merienda/Merienda-VariableFont_wght.ttf") tech(color-COLRv1),
+    format("ttf");
+  font-weight: 300 900;
+  font-display: swap;
+}
+
+/* LEXEND DECA: Variable */
+@font-face {
+  font-family: "lexendDeca-variable";
+  src: local("LexendDeca[wght]"),
+    url("/font/lexend-main/fonts/deca/variable/LexendDeca[wght].ttf")
+      tech(color-COLRv1),
+    format("ttf");
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+/* LEXEND: Variable */
+@font-face {
+  font-family: "lexendVariable";
+  src: local("LEXEND[HEXP,WGHT]"),
+    url("/font/lexend-main/fonts/lexend/variable/Lexend[HEXP\,wght].ttf")
+      tech(color-COLRv1),
+    format("ttf-variable");
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+/* LEXEND: STANDARD */
+
+@font-face {
+  font-family: "lexend-static";
+  src: local("Lexend-Regular"),
+    url("/font/lexend-main/fonts/lexend/webfonts/Lexend-Regular.woff2")
+      format("woff2");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "lexend-static";
+  src: local("Lexend-SemiBold"),
+    url("/font/lexend-main/fonts/lexend/webfonts/Lexend-SemiBold.woff2")
+      format("woff2");
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "lexend-static";
+  src: local("Lexend-Bold"),
+    url("/font/lexend-main/fonts/lexend/webfonts/Lexend-Bold.woff2")
+      format("woff2");
+  font-style: normal;
+  font-weight: 700;
+}
+
+.variable-font {
+  --font-midline: -900;
+  --font-contrast: 250;
+  font-family: "lexendVariable";
+  font-size: var(--font-base);
+  font-weight: var(--weight-400);
+  font-variation-settings: "CONT" var(--font-contrast),
+    "MIDL" var(--font-midline);
+
+  line-height: var(--line-height-base, 1.5);
+  letter-spacing: var(--letter-space, 0.12);
+  word-spacing: var(--word-space, 0.16);
+}
+
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: var(--line-height-heading);
+}
+
+span,
+figcaption {
+  line-height: var(--line-height-caption);
+}
+
+h1 {
+  font-size: var(--font-500);
+  font-weight: var(--weight-700);
+}
+
+h2 {
+  font-size: var(--font-400);
+  font-weight: var(--weight-600);
+
+  margin-bottom: 2rem;
+}
+
+h3 {
+  font-size: var(--font-300);
+  font-weight: var(--weight-500);
+}
+
+h4 {
+  font-size: var(--font-200);
+  font-weight: var(--weight-400);
+}
+
+a,
+button {
+  font-weight: var(--weight-600);
+}
+
+p {
+  font-size: var(--font-base);
+  font-weight: var(--weight-400);
+}
