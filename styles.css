@@ -1,9 +1,4 @@
 .wrapper {
-  /* flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: var(--space-l, 2rem); */
-
   width: min(900px, 100% - 3rem);
   margin-inline: auto;
 }
@@ -13,6 +8,10 @@ header {
 }
 
 /* TABLE */
+
+body {
+  font-size: var(--font-100);
+}
 
 h1,
 h2,

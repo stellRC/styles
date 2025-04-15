@@ -17,10 +17,21 @@
     <script src="scripts/cursor.js" defer></script>
   </head>
   <body class="variable-font">
-    <!-- Don't delete cursor! -->
+    <!-- Don't delete cursor  dark/light toggle!! -->
     <div class="cursor-big"></div>
-    <!-- Don't delete cursor! -->
-
+    <div class="switch-wrapper">
+      <input
+        class="switch-input"
+        type="checkbox"
+        role="switch"
+        name="dark"
+        id="dark"
+      />
+      <label class="switch-label" for="dark"></label>
+      <!-- Label for switch -->
+      <span class="switch-sr">Light Mode</span>
+    </div>
+    <!-- Don't Delete! -->
     <main>
       <div class="wrapper">
         <header>
@@ -30,7 +41,7 @@
           <header>
             <h2>Add a Birthday</h2>
           </header>
-          <form action="" class="flex" name="birthdays">
+          <form action="#" class="flex" name="birthdays">
             <div class="form-group flex">
               <label for="birthday-name">Name</label>
               <input
@@ -49,7 +60,6 @@
                   placeholder="1"
                   id="birthday-month"
                   name="birthday-month"
-                  maxlength="2"
                   autocomplete="off"
                 />
               </div>
@@ -60,7 +70,6 @@
                   placeholder="1"
                   id="birthday-day"
                   name="birthday-day"
-                  maxlength="2"
                   autocomplete="off"
                 />
               </div>
@@ -139,19 +148,5 @@
         ></small
       >
     </footer>
-
-    <!-- Don't delete dark/light toggle! -->
-    <div class="switch-wrapper">
-      <input
-        class="switch-input"
-        type="checkbox"
-        role="switch"
-        name="dark"
-        id="dark"
-      />
-      <label class="switch-label" for="dark"></label>
-      <span class="switch-sr">Light Mode</span>
-    </div>
-    <!-- Don't delete dark/light toggle! -->
   </body>
 </html>
