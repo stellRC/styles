@@ -13,8 +13,10 @@
     <link rel="stylesheet" href="styles/global.css" />
     <!-- JS -->
     <script src="scripts/cursor.js" defer></script>
+    <script src="scripts/accessability.js" defer></script>
   </head>
   <body class="variable-font">
+    <!-- Don't delete cursor & toggle! -->
     <div class="cursor-big"></div>
     <div class="switch-wrapper">
       <input
@@ -23,9 +25,22 @@
         role="switch"
         name="dark"
         id="dark"
+        onchange="updateSR()"
       />
       <label class="switch-label" for="dark"></label>
-      <span class="switch-sr">Dark Mode</span>
+      <span data-mode="light" class="switch-sr">Light Mode</span>
+      <!-- Don't delete dark/light toggle! -->
     </div>
+    <header></header>
+    <main></main>
+
+    <footer class="primary-footer">
+      <small
+        >Designed by
+        <a href="https://github.com/stellRC" class="link-decoration"
+          >StellRC</a
+        ></small
+      >
+    </footer>
   </body>
 </html>

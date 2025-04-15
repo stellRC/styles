@@ -27,7 +27,7 @@ body:has(.switch-input:checked),
   justify-content: center;
   width: fit-content;
 
-  position: fixed;
+  position: absolute;
   top: 2vh;
   right: 1.5vw;
 }
@@ -94,7 +94,9 @@ body:has(.switch-input:checked),
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  background-color: #3a3a3a;
+
+  /* Gray background for moon */
+  /* background-color: #3a3a3a; */
 
   transition: var(--trans-dur);
   transition-timing-function: var(--trans-timing);
@@ -110,7 +112,11 @@ label:active::after {
 
 .switch-sr {
   overflow: hidden;
-  position: absolute;
+  /* position: absolute; */
   width: 1px;
   height: 1px;
+}
+
+body:has(.switch-input:checked) .switch-sr::before {
+  content: "Not ";
 }

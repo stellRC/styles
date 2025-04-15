@@ -1,0 +1,1 @@
+The cursor was inspired by [Google Design](https://design.google/library/lexend-readability)

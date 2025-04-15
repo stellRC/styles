@@ -1,0 +1,121 @@
+.wrapper {
+  /* flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-l, 2rem); */
+
+  width: min(900px, 100% - 3rem);
+  margin-inline: auto;
+}
+
+header {
+  margin-top: var(--space-xl);
+}
+
+/* TABLE */
+
+h1,
+caption {
+  text-align: center;
+}
+
+caption {
+  font-size: var(--font-200);
+  font-weight: var(--weight-500);
+  text-transform: uppercase;
+}
+
+table {
+  margin-inline: auto;
+  width: 100%;
+  border-radius: 200px;
+  text-align: center;
+}
+
+caption {
+  padding-block: var(--space-l, 2rem);
+}
+
+th,
+td {
+  padding: var(--space-m);
+}
+
+td {
+  text-transform: capitalize;
+  text-overflow: ellipsis;
+}
+
+th {
+  text-align: left;
+}
+
+tr:nth-child(even) {
+  background-color: var(--alt-color);
+}
+
+tr:nth-child(odd) {
+  box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4),
+    inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+}
+
+tr:first-child {
+  color: var(--button-color);
+  position: sticky;
+  top: 0;
+  background-color: inherit;
+  backdrop-filter: blur(50px);
+
+  margin-top: 2rem;
+}
+
+/* FORM */
+
+/* Table collapses for mobile */
+@media (max-width: 650px) {
+  caption {
+    margin: 0 auto;
+    max-width: 20ch;
+  }
+}
+
+/* Table collapses for mobile (Use if have more than two types of data) */
+@media (max-width: 650px) {
+  /* remove columns */
+  .wrapper {
+    margin-inline: 0.4rem;
+  }
+  th {
+    display: none;
+  }
+
+  td {
+    --padding: 0.75rem 1rem;
+    padding: var(--padding);
+  }
+
+  td:first-child {
+    --padding: 1.5rem;
+    padding-top: var(--padding);
+  }
+
+  td:last-child {
+    --padding: 1.5rem;
+    padding-bottom: var(--padding);
+  }
+
+  td::before {
+    font-weight: 700;
+  }
+
+  td:nth-of-type(1)::before {
+    --padding: 1rem;
+    content: "name";
+    padding-right: var(--padding);
+  }
+  td:nth-of-type(2)::before {
+    --padding: 1rem;
+    content: "date";
+    padding-right: var(--padding);
+  }
+}

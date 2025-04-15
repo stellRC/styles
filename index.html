@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Template</title>
+    <!-- <link rel="stylesheet" href="font-face.css" /> -->
+    <!-- CSS TEMPLATE -->
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/root.css" />
+    <link rel="stylesheet" href="styles/font-type.css" />
+    <link rel="stylesheet" href="styles/toggle.css" />
+    <link rel="stylesheet" href="styles/global.css" />
+    <!-- PROJECT CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- JS TEMPLATE -->
+    <script src="scripts/cursor.js" defer></script>
+  </head>
+  <body class="variable-font">
+    <!-- Don't delete cursor! -->
+    <div class="cursor-big"></div>
+    <!-- Don't delete cursor! -->
+
+    <main>
+      <div class="wrapper">
+        <header>
+          <h1>Birthdays</h1>
+        </header>
+        <section class="form-wrapper">
+          <header>
+            <h2>Add a Birthday</h2>
+          </header>
+          <form action="">
+            <div class="form-group">
+              <label for="birthday-name">Name</label>
+              <input
+                type="text"
+                placeholder="Candy Cane"
+                id="birthday-name"
+                name="birthday-name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="birthday-month">Month</label>
+              <input
+                type="number"
+                placeholder="of the year"
+                id="birthday-month"
+                name="birthday-month"
+                maxlength="2"
+              />
+            </div>
+            <div class="form-group">
+              <label for="birthday-day">Day</label>
+              <input
+                type="number"
+                placeholder="of the month"
+                id="birthday-day"
+                name="birthday-day"
+                maxlength="2"
+              />
+            </div>
+          </form>
+        </section>
+        <table>
+          <!-- Caption must be first child of table -->
+          <caption>
+            Don't forget or you'll be cursed!
+          </caption>
+
+          <tbody>
+            <tr>
+              <th>Name</th>
+              <th>Birthday</th>
+            </tr>
+            <tr>
+              <td data-cell="name">Harry</td>
+              <td data-cell="date">7/28</td>
+            </tr>
+            <tr>
+              <td data-cell="name">Ginny</td>
+              <td data-cell="date">10/28</td>
+            </tr>
+            <tr>
+              <td data-cell="name">Luna</td>
+              <td data-cell="date">1/28</td>
+            </tr>
+            <tr>
+              <td data-cell="name">Harry</td>
+              <td data-cell="date">7/28</td>
+            </tr>
+            <tr>
+              <td data-cell="name">Ginny</td>
+              <td data-cell="date">10/28</td>
+            </tr>
+            <tr>
+              <td data-cell="name">Luna</td>
+              <td data-cell="date">1/28</td>
+            </tr>
+            <tr>
+              <td data-cell="name">Harry</td>
+              <td data-cell="date">7/28</td>
+            </tr>
+            <tr>
+              <td data-cell="name">Ginny</td>
+              <td data-cell="date">10/28</td>
+            </tr>
+            <tr>
+              <td data-cell="name">Luna</td>
+              <td data-cell="date">1/28</td>
+            </tr>
+            <tr>
+              <td data-cell="name">Harry</td>
+              <td data-cell="date">7/28</td>
+            </tr>
+            <tr>
+              <td data-cell="name">Ginny</td>
+              <td data-cell="date">10/28</td>
+            </tr>
+            <tr>
+              <td data-cell="name">Luna</td>
+              <td data-cell="date">1/28</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+    <footer class="primary-footer">
+      <small
+        >Designed by
+        <a href="https://github.com/stellRC" class="link-decoration"
+          >StellRC</a
+        ></small
+      >
+    </footer>
+
+    <!-- Don't delete dark/light toggle! -->
+    <div class="switch-wrapper">
+      <input
+        class="switch-input"
+        type="checkbox"
+        role="switch"
+        name="dark"
+        id="dark"
+        onchange="updateSR()"
+      />
+      <label class="switch-label" for="dark"></label>
+      <span class="switch-sr">Light Mode</span>
+    </div>
+    <!-- Don't delete dark/light toggle! -->
+  </body>
+</html>
