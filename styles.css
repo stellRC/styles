@@ -116,6 +116,10 @@ input,
   border-radius: 5px;
 }
 
+label {
+  font-weight: var(--weight-500);
+}
+
 @media (max-width: 500px) {
   .wrapper {
     width: auto;
