@@ -34,42 +34,44 @@
   --space-s-l: clamp(1.25rem, 0.7283rem + 2.6087vw, 2.75rem);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    /* Quiet forest */
-    /* --background-color: rgb(0, 48, 70);
+/* USE IF NOT USING LIGHT/DARK TOGGLE */
+
+/* @media (prefers-color-scheme: dark) {
+  :root { */
+/* Quiet forest */
+/* --background-color: rgb(0, 48, 70);
     --text-color: rgb(246, 241, 238);
     --highlight-color: rgb(229, 141, 102);
     --button-color: rgb(98, 170, 196);
     --alt-dark-color: rgb(3, 59, 85); */
 
-    /* Google Design */
-    /* --background-color: #e7e7ee;
+/* Google Design */
+/* --background-color: #e7e7ee;
     --text-color: #000b62;
     --highlight-color: #77536c;
     --button-color: #fb3aa2; */
 
-    /* Blue and Yellow */
-    /* --background-color: rgba(24, 49, 79, 1);
+/* Blue and Yellow */
+/* --background-color: rgba(24, 49, 79, 1);
     --text-color: rgba(237, 235, 215, 1);
     --button-color: lab(90.7% -7.16 73.91);
     --highlight-color: rgba(219, 50, 77, 1);
     --aside: rgba(65, 123, 90, 1);
     --aside-alt: rgb(255, 229, 76, 0.2); */
-  }
-}
+/* }
+} */
 
-@media (prefers-color-scheme: light) {
-  :root {
-    /* Quiet Forest */
-    /* --background-color: rgb(246, 241, 238);
+/* @media (prefers-color-scheme: light) {
+  :root { */
+/* Quiet Forest */
+/* --background-color: rgb(246, 241, 238);
     --text-color: rgb(3, 59, 85);
     --highlight-color: rgb(208, 101, 55); */
 
-    /* Blue and Green  */
-    /* --text-color: rgba(24, 49, 79, 1);
+/* Blue and Green  */
+/* --text-color: rgba(24, 49, 79, 1);
     --background-color: rgba(237, 235, 215, 1);
     --button-color: rgba(65, 123, 90, 1);
     --highlight-color: rgb(255, 229, 76, 0.7); */
-  }
-}
+/* }
+} */

@@ -92,16 +92,16 @@ a:not([class]) {
   color: currentColor;
 }
 
-/* Make sure textareas without a rows attribute are not tiny */
+/* Make sure textarea without a rows attribute are not tiny */
 textarea:not([rows]) {
   min-height: 10em;
 }
 
 /* Safari - solving issue when using user-select:none on the <body> text input doesn't working */
-input,
+/* input,
 textarea {
   -webkit-user-select: auto;
-}
+} */
 
 /* reset default text opacity of input placeholder */
 ::placeholder {
