@@ -21,7 +21,7 @@ label:hover {
   cursor: none;
 }
 
-.cursor-big {
+.custom-cursor {
   width: 20px;
   height: 20px;
 
