@@ -12,12 +12,13 @@ body {
 body:has(.switch-input:checked),
 .button-bordered:has(.switch-input:checked),
 .link-decoration:has(.switch-input:checked) {
-  --background-color: rgba(24, 49, 79, 1);
-  --text-color: rgba(237, 235, 215, 1);
-  --button-color: lab(90.7% -7.16 73.91);
-  --highlight-color: rgba(219, 50, 77, 1);
-  --aside: rgba(65, 123, 90, 1);
-  --aside-alt: rgb(255, 229, 76, 0.2);
+  --text-color: rgba(253, 240, 213, 1);
+  --background-color: rgba(0, 48, 73, 1);
+  --button-color: rgb(45, 147, 173);
+  --highlight-color: rgb(117, 109, 84);
+
+  --aside: rgb(229, 99, 153);
+  --aside-alt: rgb(127, 144, 143);
 }
 
 .switch-wrapper {
