@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Template</title>
     <!-- CSS TEMPLATE -->
-    <link rel="stylesheet" href="styles/reset.css" />
-    <link rel="stylesheet" href="styles/root.css" />
-    <link rel="stylesheet" href="styles/font-type.css" />
-    <link rel="stylesheet" href="styles/toggle.css" />
-    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="/static/styles/reset.css" />
+    <link rel="stylesheet" href="/static/styles/root.css" />
+    <link rel="stylesheet" href="/static/styles/font-type.css" />
+    <link rel="stylesheet" href="/static/styles/color-mode.css" />
+    <link rel="stylesheet" href="/static/styles/global.css" />
     <!-- PROJECT CSS -->
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/static/styles/styles.css" />
     <!-- JS TEMPLATE -->
-    <script src="scripts/cursor.js" defer></script>
+    <script src="/static/scripts/cursor.js" defer></script>
   </head>
+
   <body class="variable-font">
     <!-- Don't delete cursor  dark/light toggle!! -->
     <div class="cursor-big"></div>
@@ -41,7 +42,7 @@
             <h2>Add a Birthday</h2>
           </header>
           <!-- Form for users to submit a name, a month, and a day -->
-          <form action="#" class="flex" name="birthdays">
+          <form action="/" method="post" class="flex" name="birthdays">
             <div class="form-group flex">
               <label for="birthday-name">Name</label>
               <input
@@ -61,6 +62,8 @@
                   id="birthday-month"
                   name="birthday-month"
                   autocomplete="off"
+                  min="1"
+                  max="12"
                 />
               </div>
               <div class="form-group flex">
@@ -71,10 +74,13 @@
                   id="birthday-day"
                   name="birthday-day"
                   autocomplete="off"
+                  min="1"
+                  max="31"
                 />
               </div>
             </div>
-            <button class="button-bordered">Add Birthday</button>
+            <!-- <input type="submit" value="Add Birthday" class="button-bordered"> -->
+            <button type="submit" class="button-bordered">Add Birthday</button>
           </form>
         </section>
         <!-- Loop through database entries and to display them in the table -->
@@ -82,17 +88,22 @@
           <caption>
             Don't forget or they'll curse you!
           </caption>
-          <tbody>
-            <thead>
-              <tr>
-                <th>Name</th>
-                <th>Birthday</th>
-              </tr>
-            </thead>
+
+          <thead>
             <tr>
-              <td data-cell="name">Harry</td>
-              <td data-cell="date">7/28</td>
+              <th>Name</th>
+              <th>Birthday</th>
             </tr>
+          </thead>
+          <tbody>
+            {% for birthday in birthdays %}
+            <tr>
+              <td data-cell="name">{{ birthday["name"] }}</td>
+              <td data-cell="date">
+                {{ birthday["month"]}}/{{birthday["day"]}}
+              </td>
+            </tr>
+            { % endfor % }
           </tbody>
         </table>
       </div>
