@@ -9,6 +9,7 @@ body {
   transition-timing-function: var(--trans-timing);
 }
 
+/* Dark Mode */
 body:has(.switch-input:checked),
 .button-bordered:has(.switch-input:checked),
 .link-decoration:has(.switch-input:checked) {
@@ -19,6 +20,8 @@ body:has(.switch-input:checked),
 
   --aside: rgb(229, 99, 153);
   --aside-alt: rgb(127, 144, 143);
+
+  --switch-color: rgba(253, 240, 213, 1);
 }
 
 .switch-wrapper {
@@ -43,7 +46,7 @@ body:has(.switch-input:checked),
   width: var(--width);
 
   height: var(--height);
-  background-color: var(--highlight-color);
+  background-color: var(--switch-color);
 
   border-radius: 200px;
   box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4),

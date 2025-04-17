@@ -14,6 +14,9 @@
   --invalid-input: rgba(150, 20, 20, 0.668);
   --warning-input: rgba(255, 229, 76, 0.5);
 
+  /* Switch Color */
+  --switch-color: rgb(255, 229, 76, 0.7);
+
   /* Paragraph Spacing - at least 2 times font size */
   --space-paragraph: clamp(2.5rem, 2.413rem + 0.4348vw, 2.75rem);
 
@@ -48,7 +51,7 @@
 /* Google Design */
 /* Blue and Yellow */
 
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
   :root {
     --background-color: rgb(0, 48, 70);
     --text-color: rgb(246, 241, 238);
@@ -67,6 +70,13 @@
     --highlight-color: rgba(219, 50, 77, 1);
     --aside: rgba(65, 123, 90, 1);
     --aside-alt: rgb(255, 229, 76, 0.2);
+
+    --background-color: rgba(253, 240, 213, 1);
+    --text-color: rgba(0, 48, 73, 1);
+    --button-color: rgb(117, 109, 84);
+    --highlight-color: rgb(45, 147, 173);
+    --aside: rgb(229, 99, 153);
+    --aside-alt: rgb(127, 144, 143);
   }
 }
 
@@ -82,12 +92,11 @@
     --highlight-color: rgb(255, 229, 76, 0.7);
     --alt-color: rgba(219, 50, 77, 1);
 
-
-  --background-color: rgba(253, 240, 213, 1);
-  --text-color: rgba(0, 48, 73, 1);
-  --button-color: rgb(117, 109, 84);
-  --highlight-color: rgb(45, 147, 173);
-  --aside: rgb(229, 99, 153);
-  --aside-alt: rgb(127, 144, 143);
+    --text-color: rgba(253, 240, 213, 1);
+    --background-color: rgba(0, 48, 73, 1);
+    --button-color: rgb(45, 147, 173);
+    --highlight-color: rgb(117, 109, 84);
+    --aside: rgb(229, 99, 153);
+    --aside-alt: rgb(127, 144, 143);
   }
-} */
+}
