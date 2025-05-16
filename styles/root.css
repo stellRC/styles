@@ -4,8 +4,12 @@
   /* Light Mode Colors */
   --background-color: rgba(253, 240, 213, 1);
   --text-color: rgba(0, 48, 73, 1);
-  --button-color: rgb(117, 109, 84);
-  --highlight-color: rgb(45, 147, 173);
+  /* --button-color: rgb(117, 109, 84); */
+  --button-color: rgb(11, 24, 113);
+  /* --highlight-color: rgb(45, 147, 173); */
+
+  --highlight-color: rgb(255, 229, 76);
+
   --aside: rgb(229, 99, 153);
   --aside-alt: rgb(127, 144, 143);
 
@@ -50,7 +54,7 @@
 /* Mountain */
 /* Google Design */
 /* Blue and Yellow */
-
+/* 
 @media (prefers-color-scheme: dark) {
   :root {
     --background-color: rgb(0, 48, 70);
@@ -73,7 +77,7 @@
 
     --background-color: rgba(253, 240, 213, 1);
     --text-color: rgba(0, 48, 73, 1);
-    --button-color: rgb(117, 109, 84);
+    --button-color: rgb(79, 74, 58);
     --highlight-color: rgb(45, 147, 173);
     --aside: rgb(229, 99, 153);
     --aside-alt: rgb(127, 144, 143);
@@ -98,5 +102,5 @@
     --highlight-color: rgb(117, 109, 84);
     --aside: rgb(229, 99, 153);
     --aside-alt: rgb(127, 144, 143);
-  }
-}
+  } */
+/* } */

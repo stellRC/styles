@@ -9,9 +9,9 @@ body {
   cursor: none;
 }
 
-.primary-footer {
+/* .primary-footer {
   margin: var(--space-xl);
-}
+} */
 /* Cursor */
 
 a:hover,
@@ -115,7 +115,7 @@ label:hover {
   background-color: inherit;
   border-radius: 5px;
 
-  color: var(--button-color);
+  /* color: var(--button-color); */
 }
 
 .link-decoration:focus:before,
